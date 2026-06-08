@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0e0c0b">
+
+  <title>BriNora — A continuous state of calm</title>
+  <meta name="description" content="BriNora — a single, quiet world of wellness. Move gently between Calm, Rest, Focus, Feel, Activate and Ground.">
+
+  <!-- Social preview (EDIT values / image as you like) -->
+  <meta property="og:title" content="BriNora">
+  <meta property="og:description" content="A continuous state of calm.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/background.jpg">
+
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+
+  <!-- Fonts (no build step needed) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--
+  BriNora — starter shell
+  -----------------------
+  Required assets (place in /assets at the repo root):
+    assets/background.jpg          fixed full-screen background
+    assets/logo.svg                masthead logo
+    assets/states/calm.svg
+    assets/states/rest.svg
+    assets/states/focus.svg
+    assets/states/feel.svg
+    assets/states/activate.svg
+    assets/states/ground.svg
+  If your icon filenames differ, just update the src="" values in the States view.
+  All visible copy below is placeholder — search for "EDIT" to find prices etc.
+-->
+
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+
+  <!-- Fixed background — never changes between views -->
+  <div class="bg" aria-hidden="true"></div>
+
+  <div class="app">
+
+    <!-- Persistent header: logo + navigation (always visible) -->
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="BriNora — home">
+        <img src="assets/logo.svg" alt="BriNora">
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a data-nav href="#home">Home</a>
+        <a data-nav href="#states">States</a>
+        <a data-nav href="#system">System</a>
+        <a data-nav href="#research">Research</a>
+        <a data-nav href="#about">About</a>
+        <a data-nav href="#pricing">Pricing</a>
+        <a data-nav href="#paths">Paths</a>
+      </nav>
+    </header>
+
+    <!-- Only this region changes; it fades + blurs between views -->
+    <main id="view" class="view-port" tabindex="-1">
+
+      <!-- ============ HOME ============ -->
+      <section class="view view--home" id="home" aria-labelledby="home-title">
+        <div class="wrap">
+          <p class="eyebrow">Luxury wellness, quietly</p>
+          <h1 id="home-title">A continuous<br>state of calm.</h1>
+          <p class="lede">BriNora is a single, unhurried world for the way you want to feel — moving gently between six states of being.</p>
+          <div class="actions">
+            <a class="link-arrow" href="#states">Explore the states <span class="arrow">→</span></a>
+            <a class="link-arrow" href="#system">How it works <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STATES ============ -->
+      <section class="view" id="states" aria-labelledby="states-title" hidden>
+        <div class="wrap">
+          <p class="eyebrow">The six states</p>
+          <h2 id="states-title">States</h2>
+          <p class="lede">Six ways to return to yourself. Choose where you are — or where you’d like to be.</p>
+
+          <div class="grid grid--2">
+            <article class="card glass">
+              <img class="state-icon" src="assets/states/calm.svg" alt="" aria-hidden="true">
+              <span class="state-name">Calm</span>
+              <p>Settle the noise and return to center.</p>
+            </article>
+            <article class="card glass">
+              <img class="state-icon" src="assets/states/rest.svg" alt="" aria-hidden="true">
+              <span class="state-name">Rest</span>
+              <p>Deep, unhurried recovery.</p>
+            </article>
+            <article class="card glass">
+              <img class="state-icon" src="assets/states/focus.svg" alt="" aria-hidden="true">
+              <span class="state-name">Focus</span>
+              <p>Clear attention, held with ease.</p>
+            </article>
+            <article class="card glass">
+              <img class="state-icon" src="assets/states/feel.svg" alt="" aria-hidden="true">
+              <span class="state-name">Feel</span>
+              <p>Open to emotion, gently.</p>
+            </article>
+            <article class="card glass">
+              <img class="state-icon" src="assets/states/activate.svg" alt="" aria-hidden="true">
+              <span class="state-name">Activate</span>
+              <p>Warm energy, slowly rising.</p>
+            </article>
+            <article class="card glass">
+              <img class="state-icon" src="assets/states/ground.svg" alt="" aria-hidden="true">
+              <span class="state-name">Ground</span>
+              <p>Steady, rooted, present.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SYSTEM ============ -->
+      <section class="view" id="system" aria-labelledby="system-title" hidden>
+        <div class="wrap">
+          <p class="eyebrow">The method</p>
+          <h2 id="system-title">System</h2>
+          <p class="lede">Three quiet movements, repeated until they become natural.</p>
+
+          <div class="grid grid--3">
+            <article class="step glass">
+              <span class="num">01</span>
+              <h3>Sense</h3>
+              <p>Notice where you are, without judgement.</p>
+            </article>
+            <article class="step glass">
+              <span class="num">02</span>
+              <h3>Shift</h3>
+              <p>Move toward the state you need, gently.</p>
+            </article>
+            <article class="step glass">
+              <span class="num">03</span>
+              <h3>Sustain</h3>
+              <p>Let the change settle, and stay.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ RESEARCH ============ -->
+      <section class="view" id="research" aria-labelledby="research-title" hidden>
+        <div class="wrap">
+          <p class="eyebrow">Evidence</p>
+          <h2 id="research-title">Research</h2>
+          <p class="lede">BriNora is built on an evidence-led understanding of how attention, breath, and rest shape the way we feel.</p>
+
+          <div class="panel glass prose">
+            <p>This is placeholder text. Replace it with a short, calm summary of the science behind BriNora — the principles, the methods, and what they’re drawn from.</p>
+            <p>Keep the tone measured and editorial. Two or three paragraphs is plenty here; depth can live on a dedicated page later.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="view" id="about" aria-labelledby="about-title" hidden>
+        <div class="wrap">
+          <p class="eyebrow">Our story</p>
+          <h2 id="about-title">About</h2>
+          <div class="prose">
+            <p class="lede">BriNora began with a simple question: what would wellness feel like if it were truly calm?</p>
+            <p>This is placeholder copy. Tell the story of BriNora here — where it came from, what it believes, and the world it wants to create. Let the writing breathe.</p>
+            <p>A closing line can leave the reader with a feeling rather than a call to action.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PRICING ============ -->
+      <section class="view" id="pricing" aria-labelledby="pricing-title" hidden>
+        <div class="wrap">
+          <p class="eyebrow">Membership</p>
+          <h2 id="pricing-title">Pricing</h2>
+          <p class="lede">One world, two simple ways in.</p>
+
+          <div class="grid grid--2">
+            <article class="tier glass">
+              <h3>Monthly</h3>
+              <!-- EDIT price -->
+              <p class="price">&euro;18<span>/ month</span></p>
+              <ul>
+                <li>Full access to all six states</li>
+                <li>Guided paths, refreshed weekly</li>
+                <li>Cancel anytime</li>
+              </ul>
+              <a class="btn cta" href="#paths">Begin</a>
+            </article>
+
+            <article class="tier tier--featured glass">
+              <h3>Annual</h3>
+              <!-- EDIT price -->
+              <p class="price">&euro;144<span>/ year</span></p>
+              <ul>
+                <li>Everything in Monthly</li>
+                <li>Two months, on us</li>
+                <li>Early access to new paths</li>
+              </ul>
+              <a class="btn btn--accent cta" href="#paths">Begin</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PATHS ============ -->
+      <section class="view" id="paths" aria-labelledby="paths-title" hidden>
+        <div class="wrap">
+          <p class="eyebrow">Guided journeys</p>
+          <h2 id="paths-title">Paths</h2>
+          <p class="lede">Gentle sequences that move you from one state to the next.</p>
+
+          <div class="grid grid--2">
+            <article class="path glass">
+              <span class="dur">8 min</span>
+              <span class="name">Morning Calm</span>
+              <p>A soft beginning to settle into the day.</p>
+            </article>
+            <article class="path glass">
+              <span class="dur">20 min</span>
+              <span class="name">Into Deep Rest</span>
+              <p>Wind down slowly toward true recovery.</p>
+            </article>
+            <article class="path glass">
+              <span class="dur">12 min</span>
+              <span class="name">The Focused Day</span>
+              <p>Clear the mind and hold steady attention.</p>
+            </article>
+            <article class="path glass">
+              <span class="dur">15 min</span>
+              <span class="name">Coming Home</span>
+              <p>Return to the body, grounded and present.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Persistent footer (always visible) -->
+    <footer class="site-footer">
+      <span class="wordmark">BriNora</span>
+      <small>&copy; 2026 &middot; A continuous state of calm</small>
+    </footer>
+
+  </div>
+
+  <noscript>
+    <p style="text-align:center;color:#f3ece3;padding:20px;">This experience uses JavaScript for its transitions. Please enable it to move between views.</p>
+  </noscript>
+
+  <script src="app.js"></script>
+</body>
+</html>
