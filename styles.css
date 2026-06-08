@@ -5,7 +5,7 @@
 
 :root{
   /* Background image (fixed, never changes) */
-  --bg-image: url("assets/background.jpg");
+  --bg-image: url("assets/background.jpg.PNG");
 
   /* Palette — warm, dusk-toned */
   --ink: #f3ece3;
